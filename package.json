@@ -1,7 +1,7 @@
 {
   "name": "fetch-news-app",
   "version": "0.1.0",
-  "homepage": "https://aghyadallogie.github.io/goodMorningAghy",
+  "homepage": "https://aghyadallogie.github.io/goodMorning",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
