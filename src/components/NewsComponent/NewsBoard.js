@@ -4,13 +4,11 @@ import Flashcard from './Flashcard';
 
 export const NewsBoard = () => {
 
-    const url = `http://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=${process.env.REACT_APP_NEWS_API_KEY}`;
+    const url = `https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=${process.env.REACT_APP_NEWS_API_KEY}`;
 
-    const defaultState = { articles: [] }
+    const [state, setState] = useState([]);
 
-    const [state, setState] = useState(defaultState);
-
-    useEffect(_ => {
+    useEffect(() => {
         Axios
             .get(url)
             .then(response => {

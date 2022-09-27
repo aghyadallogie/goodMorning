@@ -5,7 +5,7 @@ export default function Flashcard({ articlesArray }) {
     const [articleIndex, setArticleIndex] = useState(0);
     const [flip, setFlip] = useState(false);
 
-    const handleCardClick = _ => {
+    const handleCardClick = () => {
         setFlip(!flip);
         if (articleIndex < articlesArray.length - 1) {
             setArticleIndex(articleIndex + 1);

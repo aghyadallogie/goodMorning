@@ -14,7 +14,7 @@ export const Temperature = () => {
   const today = new Date();
   const dayName = days[today.getDay()];
 
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=berlin&appid=${process.env.REACT_APP_WEWATHER_API_KEY}&units=metric`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=berlin&appid=${process.env.REACT_APP_WEATHER_API_KEY}&units=metric`;
 
   const defaultState = {
     base: "",
